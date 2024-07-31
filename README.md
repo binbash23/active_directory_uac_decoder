@@ -9,8 +9,8 @@ If you want to decode the number into multiple flag-columns, you can do it with 
 
 ```
 select
-   -- ... other AD columns 
-   ,[useraccountcontrol] as [User Account Control]
+         -- ... other AD columns 
+         ,[useraccountcontrol] as [User Account Control]
 	 ,case when (useraccountcontrol & 1) > 0 then 1 else 0 end as SCRIPT
 	 ,case when (useraccountcontrol & 2) > 0 then 1 else 0 end as ACCOUNTDISABLE
 	 ,case when (useraccountcontrol & 4) > 0 then 1 else 0 end as RESERVED
