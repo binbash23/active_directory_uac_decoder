@@ -2,7 +2,7 @@
 Decode the User Account Control number from the active directory LDAP and create multiple db columns from it
 
 
-I export the AD data with a script (see and modify: ad_crawler.ps1) and import it into a database table with a visual studio SSIS project (which is not included here).
+I export the AD data with a script (see and modify: [ad_crawler.ps1](https://github.com/binbash23/active_directory_uac_decoder/blob/master/ad_crawler.ps1)) and import it into a database table with a visual studio SSIS project (which is not included here).
 
 One of the LDAP columns/fields is "useraccountcontrol" which contains a number. The number holds encoded information about the accounts "User Account Control". 
 If you want to know some detail about the encoding, have a look [here](https://jeremy-heer.github.io/uac-converter/uac-converter/).
