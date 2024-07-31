@@ -37,6 +37,6 @@ select
 	 ,case when (useraccountcontrol & 67108864) > 0 then 1 else 0 end as PARTIAL_SECRETS_ACCOUNT
 
 from
-   [your_table_that_stores_the_ad_information]
+         [your_table_that_stores_the_ad_information]
 
 ```
